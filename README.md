@@ -10,7 +10,7 @@ Chaque fiche paraphrase la source et renvoie vers elle. Les droits sur les conte
 
 ## Ajouter une fiche
 
-Coller le lien dans une conversation Claude avec le skill `reading-note`, ou à la main :
+Coller le lien dans une conversation Claude avec le skill `/aa-reading-note-to-brain-pro`, ou à la main :
 
 ```bash
 cp _templates/note.md notes/my-slug.md   # remplir
