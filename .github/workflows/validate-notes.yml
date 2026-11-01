@@ -3,9 +3,9 @@ name: validate-notes
 on:
   push:
     branches: [main]
-    paths: ["notes/**", "schema/**", "scripts/**"]
+    paths: ["notes/**", "tools/**", "schema/**", "scripts/**"]
   pull_request:
-    paths: ["notes/**", "schema/**", "scripts/**"]
+    paths: ["notes/**", "tools/**", "schema/**", "scripts/**"]
 
 permissions:
   contents: write

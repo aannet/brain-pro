@@ -10,6 +10,7 @@ status: inbox          # inbox | read | deep-dive
 rating: null           # 1 à 5, optionnel
 tldr: ""               # une phrase, reprise dans INDEX.md
 related: []            # slugs d'autres fiches
+tools: []              # slugs de fiches outils citées (tools/)
 ---
 
 ## En bref
