@@ -34,6 +34,14 @@ Premier article de la série « Claude Code at scale ». Anthropic synthétise c
 - Exemples clients sans métriques : un plugin d'accès à une plateforme analytique interne publié avant le déploiement, et LSP généralisé en amont pour fiabiliser la navigation en C/C++.
 - Hors périmètre, annoncé pour des articles suivants : les repos à millions de fichiers, les VCS non Git (Perforce) et les contributeurs non ingénieurs.
 
+## À ne pas faire
+
+- Brancher des MCP avant que CLAUDE.md, hooks et skills tiennent → complexité ajoutée sur des bases fragiles (erreur fréquente citée).
+- Lancer des recherches vagues depuis la racine d'un très gros repo → fenêtre de contexte saturée avant d'avoir trouvé le bon code.
+- Empiler tout le contexte dans un CLAUDE.md racine volumineux → bruit chargé à chaque session ; préférer des fichiers légers par sous-dossier.
+- Garder telles quelles les consignes et hooks écrits pour un ancien modèle → ils brident le nouveau ou dupliquent une fonction devenue native.
+- Ouvrir l'accès à toute l'organisation avant d'avoir posé l'infrastructure et un responsable → adoption plus lente que chez ceux qui ont préparé.
+
 ## Ce que j'en retiens
 
 À valider : dans un SI hétérogène multi-stack, le levier le moins cher reste la lisibilité (CLAUDE.md par domaine métier, exclusions du code généré), bien avant les MCP. L'ordre de construction proposé donne une roadmap d'adoption utilisable telle quelle : harness minimal, DRI nommé, skills validées, puis ouverture progressive. La revue de configuration à chaque nouveau modèle ressemble à de la dette d'outillage, il faut la planifier comme telle.

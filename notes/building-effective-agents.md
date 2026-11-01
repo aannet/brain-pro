@@ -24,6 +24,12 @@ Anthropic tire les leçons de ses déploiements clients : les systèmes qui marc
 - Les frameworks aident à démarrer mais masquent prompts et réponses ; il vaut mieux comprendre le code sous-jacent.
 - Investir dans l'interface agent-outil (ACI) autant que dans une interface humaine : documentation des outils, formats proches de ce que le modèle voit naturellement, paramètres qui empêchent les erreurs.
 
+## À ne pas faire
+
+- Ajouter des couches agentiques sans mesure qui le justifie → latence et coût en hausse sans gain prouvé.
+- Adopter un framework sans comprendre le code qu'il génère → prompts et réponses masqués, débogage difficile.
+- Lâcher un agent autonome sans environnement de test ni garde-fous → les erreurs s'enchaînent sur plusieurs étapes.
+
 ## Ce que j'en retiens
 
 La grille workflow vs agent sert d'abord à justifier le choix le plus simple. Dans un brownfield, la plupart des cas d'usage tiennent dans du chaining ou du routing, avec des points de contrôle déterministes ; l'agent autonome se réserve aux tâches ouvertes avec un environnement de test (le code, typiquement).

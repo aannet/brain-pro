@@ -15,6 +15,7 @@ Valeurs de `status` : `inbox` (pas encore lu en entier), `read`, `deep-dive`.
 2. Vérifier les doublons : `grep -rl "<url>" notes/`. Si la fiche existe, proposer de la compléter.
 3. Remplir le front matter. `tags` : réutiliser en priorité les tags existants (`grep -h "^tags:" notes/*.md`).
 4. Rédiger le corps en français, paraphrasé. Une citation de moins de 15 mots maximum par fiche.
+   Section « À ne pas faire » : seulement si la source formule des anti-patterns explicites, au format « anti-pattern → conséquence ». Sinon, l'omettre. Ne jamais inverser des bonnes pratiques pour la remplir. Les mises en garde personnelles vont dans « Ce que j'en retiens ».
 5. Remplir `related` avec les slugs des fiches qui partagent des tags.
 6. Valider puis régénérer l'index : `python3 scripts/build_index.py --check && python3 scripts/build_index.py`.
 7. Commit `note: <title>`, push sur `main`.
@@ -23,6 +24,7 @@ Valeurs de `status` : `inbox` (pas encore lu en entier), `read`, `deep-dive`.
 
 Lire `INDEX.md` d'abord (une ligne par fiche). Ouvrir les fiches seulement si le détail est nécessaire.
 Filtrer : `grep -l "tags:.*evals" notes/*.md`, `grep -l "status: inbox" notes/*.md`.
+Tous les anti-patterns : `grep -A10 "^## À ne pas faire" notes/*.md`.
 
 ## Règles
 

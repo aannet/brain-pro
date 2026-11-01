@@ -20,6 +20,12 @@ related: []            # slugs d'autres fiches
 
 - 
 
+## À ne pas faire
+
+Facultatif : seulement les anti-patterns explicites de la source. Format : anti-pattern → conséquence.
+
+- 
+
 ## Ce que j'en retiens
 
 Applicabilité, désaccords, liens avec ce que je fais.
