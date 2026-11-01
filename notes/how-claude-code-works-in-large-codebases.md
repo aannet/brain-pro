@@ -9,7 +9,7 @@ tags: [claude-code, context-engineering, agents, tool-design, adoption]
 status: read
 rating: null
 tldr: "Sur un gros codebase, le harness (CLAUDE.md, hooks, skills, LSP, sous-agents) pèse plus que le modèle : rendre le code navigable et nommer un responsable avant d'ouvrir l'accès."
-related: [building-effective-agents]
+related: [building-effective-agents, when-to-fold-subagents-into-main-agent-loop]
 ---
 
 ## En bref
