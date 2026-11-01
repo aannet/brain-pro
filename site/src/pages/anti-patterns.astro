@@ -1,0 +1,48 @@
+---
+import Base from "../layouts/Base.astro";
+import { getNotes, antiPatterns, href, inline } from "../lib/notes";
+
+const notes = await getNotes();
+const groups = notes
+  .map((n) => ({ note: n, items: antiPatterns(n) }))
+  .filter((g) => g.items.length > 0);
+const total = groups.reduce((s, g) => s + g.items.length, 0);
+---
+<Base title="À ne pas faire" current="anti-patterns">
+  <h1>À ne pas faire</h1>
+  <p class="lede">{total} anti-patterns tirés de {groups.length} sources. Chacun avec sa conséquence et un lien vers la fiche d'origine.</p>
+
+  {groups.map(({ note, items }) => (
+    <section>
+      <h2>
+        <a href={href(`/notes/${note.id}/`)}>{note.data.title}</a>
+      </h2>
+      <div class="tags">{note.data.tags.map((t) => <a class="tag" href={href(`/tags/${t}/`)}>{t}</a>)}</div>
+      <ol>
+        {items.map((i) => (
+          <li>
+            <p class="what" set:html={inline(i.what)} />
+            {i.why && <p class="why"><span aria-hidden="true">→</span> <span set:html={inline(i.why)} /></p>}
+          </li>
+        ))}
+      </ol>
+    </section>
+  ))}
+</Base>
+
+<style>
+  section { margin-bottom: 36px; }
+  h2 { font-size: 1.25rem; margin: 0 0 6px; }
+  h2 a { text-decoration: none; }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
+  ol { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+  li {
+    background: var(--warn-bg);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    padding: 10px 14px;
+  }
+  .what { margin: 0; font-weight: 500; }
+  .why { margin: 4px 0 0; color: var(--muted); font-size: 0.93rem; }
+  .why span[aria-hidden] { color: var(--accent); }
+</style>

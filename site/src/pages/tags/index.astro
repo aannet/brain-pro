@@ -1,0 +1,22 @@
+---
+import Base from "../../layouts/Base.astro";
+import { getNotes, allTags, href } from "../../lib/notes";
+
+const tags = allTags(await getNotes());
+const max = Math.max(...tags.map(([, n]) => n));
+---
+<Base title="Tags" current="tags">
+  <h1>Tags</h1>
+  <p class="lede">{tags.length} tags. La taille suit le nombre de fiches.</p>
+  <ul class="cloud">
+    {tags.map(([t, n]) => (
+      <li><a href={href(`/tags/${t}/`)} style={`font-size:${0.95 + (n / max) * 0.9}rem`}>{t}<small>{n}</small></a></li>
+    ))}
+  </ul>
+</Base>
+
+<style>
+  .cloud { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 10px 22px; align-items: baseline; }
+  .cloud a { font-family: var(--mono); text-decoration: none; }
+  .cloud small { color: var(--muted); font-size: 0.7rem; margin-left: 4px; }
+</style>

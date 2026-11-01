@@ -30,3 +30,4 @@ Tous les anti-patterns : `grep -A10 "^## À ne pas faire" notes/*.md`.
 
 - Le repo est public : pas de reproduction de contenu, pas d'information interne à un employeur.
 - `INDEX.md` est généré, ne jamais le modifier à la main.
+- Le schéma Zod de `site/src/content.config.ts` doit rester aligné avec `schema/note.schema.json` : modifier les deux ensemble.

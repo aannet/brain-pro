@@ -1,0 +1,46 @@
+---
+import { href, STATUS_LABEL, antiPatterns, type Note } from "../lib/notes";
+
+interface Props { note: Note }
+const { note } = Astro.props;
+const d = note.data;
+const ap = antiPatterns(note).length;
+---
+<article
+  class="card"
+  data-tags={d.tags.join(" ")}
+  data-status={d.status}
+  data-text={`${d.title} ${d.tldr} ${d.tags.join(" ")} ${d.authors.join(" ")}`.toLowerCase()}
+>
+  <div class="meta">
+    <span class="status" data-s={d.status}>{STATUS_LABEL[d.status]}</span>
+    <span>{d.type}</span>
+    <span>ajoutée le {d.added}</span>
+    {d.rating && <span aria-label={`Note ${d.rating} sur 5`}>{"●".repeat(d.rating)}{"○".repeat(5 - d.rating)}</span>}
+  </div>
+  <h2><a href={href(`/notes/${note.id}/`)}>{d.title}</a></h2>
+  <p class="tldr">{d.tldr}</p>
+  <div class="foot">
+    <div class="tags">
+      {d.tags.map((t) => <a class="tag" href={href(`/tags/${t}/`)}>{t}</a>)}
+    </div>
+    {ap > 0 && <span class="ap">{ap} à éviter</span>}
+  </div>
+</article>
+
+<style>
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 18px 20px;
+  }
+  .card[hidden] { display: none; }
+  .meta { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 0.8rem; color: var(--muted); }
+  h2 { font-size: 1.3rem; margin: 8px 0 6px; }
+  h2 a { text-decoration: none; }
+  .tldr { margin: 0 0 12px; font-family: var(--serif); font-size: 1.06rem; line-height: 1.5; }
+  .foot { display: flex; flex-wrap: wrap; gap: 8px; justify-content: space-between; align-items: center; }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+  .ap { font-size: 0.78rem; color: var(--accent); font-weight: 600; }
+</style>
