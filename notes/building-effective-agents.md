@@ -9,7 +9,7 @@ tags: [agents, workflows, orchestration, tool-design]
 status: read
 rating: 5
 tldr: "Commencer par l'appel LLM le plus simple, monter vers des workflows composables, et ne passer à un agent autonome que si la tâche l'exige."
-related: []
+related: [how-claude-code-works-in-large-codebases]
 ---
 
 ## En bref
