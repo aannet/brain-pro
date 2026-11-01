@@ -10,6 +10,7 @@ status: read
 rating: null
 tldr: "En entreprise, une seule boucle agentique qui charge skills et tools à la demande bat souvent l'architecture multi-sous-agents : migrer un sous-agent à la fois, evals à l'appui."
 related: [building-effective-agents, how-claude-code-works-in-large-codebases]
+tools: [single-agent-loop-kit]
 ---
 
 ## En bref
