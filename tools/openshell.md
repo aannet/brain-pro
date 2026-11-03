@@ -14,9 +14,11 @@ seen_in: []
 
 ## Ce que c'est
 
-Un runtime open-source (Apache 2.0, v0.1.x) qui fait tourner chaque agent dans une sandbox. L'opérateur déclare dans une policy ce que l'agent peut lire, appeler et exécuter, et OpenShell l'applique au niveau noyau : accès fichiers et appels système filtrés, chaque connexion réseau vérifiée avant de sortir. L'agent ne voit jamais les vrais secrets : ils sont injectés seulement sur les requêtes vers des endpoints autorisés.
+Un runtime open-source (Apache 2.0, v0.1.6) qui fait tourner chaque agent dans une sandbox. L'opérateur déclare dans une policy YAML ce que l'agent peut lire, appeler et exécuter, et OpenShell l'applique au niveau noyau : Landlock pour le système de fichiers, seccomp et identité non privilégiée pour les processus, sortie réseau refusée par défaut sauf destinations approuvées. L'agent ne voit jamais les vrais secrets : il manipule des placeholders, résolus seulement vers les endpoints autorisés par le profil du provider.
 
-L'architecture tient en trois briques : une gateway (control plane : sandboxes, policies, accès), un supervisor, et les sandboxes (images, runtimes, support GPU). Les changements de policy passent par un « advisor » et un « prover » : la vérification formelle signale les nouveaux accès risqués (nouvel hôte avec credentials, nouvelle méthode d'API) et les met en attente de revue humaine. Tourne sur Docker, Podman ou virtualisation hôte, en local ou sur Kubernetes via Helm. SDK Python, TypeScript, Go et Rust. L'image par défaut est un Ubuntu minimal sans agent ; le tutoriel installe OpenCode.
+Les couches n'ont pas le même cycle de vie. Fichiers et processus sont figés à la création de la sandbox ; réseau et credentials se modifient à chaud (rotation, révocation), sauf une nouvelle variable d'environnement qui impose un nouveau processus.
+
+L'architecture tient en trois briques : une gateway (control plane : sandboxes, policies, accès), un supervisor, et les sandboxes (images, runtimes, support GPU). Les changements de policy passent par un « advisor » et un « prover » : la vérification formelle signale les nouveaux accès risqués (nouvel hôte avec credentials, nouvelle méthode d'API) et les met en attente de revue humaine. Tourne sur Docker, Podman ou virtualisation hôte, en local ou sur Kubernetes via Helm. SDK Python, TypeScript, Go et Rust. Agents cités par la doc : Claude Code, OpenCode, Codex et GitHub Copilot CLI. Image par défaut Ubuntu minimale, ou conteneur maison.
 
 ## Pourquoi ça m'intéresse
 
@@ -24,8 +26,9 @@ L'architecture tient en trois briques : une gateway (control plane : sandboxes, 
 
 ## À vérifier avant d'essayer
 
-- Maturité : v0.1.x, pas de date de release visible, environ 380 issues ouvertes. Stabilité des APIs entre versions mineures (le README recommande d'aligner SDK et gateway).
-- Agents supportés : seul OpenCode est cité. Faisabilité de faire tourner Claude Code ou un agent maison dans une sandbox, et comportement avec un agent qui a besoin de beaucoup d'hôtes différents.
+- Maturité : v0.1.6, pas de date de release visible, environ 380 issues ouvertes. Stabilité des APIs entre versions mineures (le README recommande d'aligner SDK et gateway).
+- Claude Code est annoncé comme supporté : vérifier le profil provider à écrire pour l'API Anthropic, et le comportement avec un agent qui touche beaucoup d'hôtes différents (MCP, registres de paquets).
+- Policies versionnées en Git : tester si le cycle « policy en YAML, revue en PR, prover sur le diff » tient pour une équipe, ou si l'advisor devient indispensable.
 - Coût opérationnel de la gateway en self-hosting, et prérequis Kubernetes (CNI qui applique les NetworkPolicy).
 - Expressivité réelle des policies : granularité sur les méthodes d'API, effort pour écrire et maintenir une policy par agent.
 - Télémétrie anonyme activée par défaut : à désactiver (`OPENSHELL_TELEMETRY_ENABLED=false`) pour un usage en entreprise.
