@@ -9,7 +9,7 @@ tags: [sdlc, claude-code, governance, evals, security, adoption]
 status: read
 rating: null
 tldr: "Le code n'est plus le goulot : le SDLC devient une boucle d'artefacts versionnés (intent, spec, plan, diff, revue, incident), les règles critiques passent par des hooks déterministes et l'humain juge aux portes."
-related: [how-claude-code-works-in-large-codebases, two-years-of-ai-in-software-development]
+related: [how-claude-code-works-in-large-codebases, two-years-of-ai-in-software-development, what-makes-a-good-software-factory]
 tools: []
 ---
 

@@ -9,7 +9,7 @@ tags: [model-routing, token-optimization, sdlc, governance, adoption]
 status: read
 rating: null
 tldr: "Le vrai coût de l'IA en dev est celui d'une tâche (itérations, planification, revue, dette de compréhension), pas du token : router le modèle selon la tâche et nommer un humain responsable de chaque changement livré."
-related: [the-ai-native-sdlc-playbook]
+related: [the-ai-native-sdlc-playbook, what-makes-a-good-software-factory]
 tools: []
 ---
 

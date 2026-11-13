@@ -2,10 +2,11 @@
 
 Fichier généré par `scripts/build_index.py`, ne pas modifier à la main.
 
-## Fiches de lecture (5)
+## Fiches de lecture (6)
 
 | Ajout | Fiche | Type | Tags | Statut | TL;DR |
 |---|---|---|---|---|---|
+| 2026-11-13 | [What makes a good software factory](notes/what-makes-a-good-software-factory.md) | blog | `sdlc` `governance` `evals` `agents` `adoption` | read | Donner des agents de code à cent développeurs ne fait pas une usine : il faut une ligne partagée, une trace par changement, des contrôles indépendants et le produit associé dès la conception. |
 | 2026-11-10 | [Deux ans d'IA en développement logiciel : ce qui a tenu, ce qui a changé](notes/two-years-of-ai-in-software-development.md) | blog | `model-routing` `token-optimization` `sdlc` `governance` `adoption` | read | Le vrai coût de l'IA en dev est celui d'une tâche (itérations, planification, revue, dette de compréhension), pas du token : router le modèle selon la tâche et nommer un humain responsable de chaque changement livré. |
 | 2026-11-02 | [The AI-native SDLC playbook](notes/the-ai-native-sdlc-playbook.md) | blog | `sdlc` `claude-code` `governance` `evals` `security` `adoption` | read | Le code n'est plus le goulot : le SDLC devient une boucle d'artefacts versionnés (intent, spec, plan, diff, revue, incident), les règles critiques passent par des hooks déterministes et l'humain juge aux portes. |
 | 2026-11-01 | [Building effective agents](notes/building-effective-agents.md) | blog | `agents` `workflows` `orchestration` `tool-design` | read | Commencer par l'appel LLM le plus simple, monter vers des workflows composables, et ne passer à un agent autonome que si la tâche l'exige. |

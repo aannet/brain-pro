@@ -9,7 +9,7 @@ tags: [agents, orchestration, context-engineering, tool-design, evals]
 status: read
 rating: null
 tldr: "En entreprise, une seule boucle agentique qui charge skills et tools à la demande bat souvent l'architecture multi-sous-agents : migrer un sous-agent à la fois, evals à l'appui."
-related: [building-effective-agents, how-claude-code-works-in-large-codebases]
+related: [building-effective-agents, how-claude-code-works-in-large-codebases, what-makes-a-good-software-factory]
 tools: [single-agent-loop-kit]
 ---
 
