@@ -2,10 +2,11 @@
 
 Fichier généré par `scripts/build_index.py`, ne pas modifier à la main.
 
-## Fiches de lecture (7)
+## Fiches de lecture (8)
 
 | Ajout | Fiche | Type | Tags | Statut | TL;DR |
 |---|---|---|---|---|---|
+| 2026-11-16 | [Get your site agent-ready](notes/get-your-site-agent-ready.md) | blog | `context-engineering` `mcp` `llms-txt` `agent-readiness` | read | Exposer aux agents une carte courte (llms.txt), un index complet et des copies markdown de chaque page, tous générés au build, coûte peu et évite de leur faire décoder du HTML. |
 | 2026-11-16 | [How Do Coding-Agent Harnesses Self-Evolve? An Empirical Study of Retrospective Adaptation](notes/how-do-coding-agent-harnesses-self-evolve.md) | paper | `claude-code` `evals` `context-engineering` `agents` | read | Un harness d'agent peut s'améliorer après coup, mais chaque modification doit prouver qu'elle réduit la récurrence du problème, sinon elle n'ajoute que du bruit. |
 | 2026-11-13 | [What makes a good software factory](notes/what-makes-a-good-software-factory.md) | blog | `sdlc` `governance` `evals` `agents` `adoption` | read | Donner des agents de code à cent développeurs ne fait pas une usine : il faut une ligne partagée, une trace par changement, des contrôles indépendants et le produit associé dès la conception. |
 | 2026-11-10 | [Deux ans d'IA en développement logiciel : ce qui a tenu, ce qui a changé](notes/two-years-of-ai-in-software-development.md) | blog | `model-routing` `token-optimization` `sdlc` `governance` `adoption` | read | Le vrai coût de l'IA en dev est celui d'une tâche (itérations, planification, revue, dette de compréhension), pas du token : router le modèle selon la tâche et nommer un humain responsable de chaque changement livré. |
