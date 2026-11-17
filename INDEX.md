@@ -2,10 +2,11 @@
 
 Fichier généré par `scripts/build_index.py`, ne pas modifier à la main.
 
-## Fiches de lecture (9)
+## Fiches de lecture (10)
 
 | Ajout | Fiche | Type | Tags | Statut | TL;DR |
 |---|---|---|---|---|---|
+| 2026-11-17 | [Modern Web Guidance](notes/modern-web-guidance.md) | doc | `claude-code` `context-engineering` `agents` `web-platform` | read | Chrome publie des skills pour agents de codage qui embarquent bonnes pratiques de la plateforme web et données Baseline, pour éviter que l'agent produise du code web legacy. |
 | 2026-11-17 | [Manifeste de Proton pour l'IA en ingénierie logicielle](notes/proton-ai-manifesto-software-engineering.md) | blog | `sdlc` `adoption` `agents` `governance` | read | Le CTO de Proton juge que l'entreprise est restée à « utiliser les LLM pour accélérer l'existant » et qu'il faut repenser tout le cycle de vie, l'ingénieur devenant celui qui encadre et améliore les agents. |
 | 2026-11-16 | [Get your site agent-ready](notes/get-your-site-agent-ready.md) | blog | `context-engineering` `mcp` `llms-txt` `agent-readiness` | read | Exposer aux agents une carte courte (llms.txt), un index complet et des copies markdown de chaque page, tous générés au build, coûte peu et évite de leur faire décoder du HTML. |
 | 2026-11-16 | [How Do Coding-Agent Harnesses Self-Evolve? An Empirical Study of Retrospective Adaptation](notes/how-do-coding-agent-harnesses-self-evolve.md) | paper | `claude-code` `evals` `context-engineering` `agents` | read | Un harness d'agent peut s'améliorer après coup, mais chaque modification doit prouver qu'elle réduit la récurrence du problème, sinon elle n'ajoute que du bruit. |

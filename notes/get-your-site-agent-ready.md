@@ -9,7 +9,7 @@ tags: [context-engineering, mcp, llms-txt, agent-readiness]
 status: read
 rating: null
 tldr: "Exposer aux agents une carte courte (llms.txt), un index complet et des copies markdown de chaque page, tous générés au build, coûte peu et évite de leur faire décoder du HTML."
-related: []
+related: [modern-web-guidance]
 tools: []
 ---
 
