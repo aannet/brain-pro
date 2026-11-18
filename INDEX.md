@@ -2,11 +2,13 @@
 
 Fichier généré par `scripts/build_index.py`, ne pas modifier à la main.
 
-## Fiches de lecture (11)
+## Fiches de lecture (13)
 
 | Ajout | Fiche | Type | Tags | Statut | TL;DR |
 |---|---|---|---|---|---|
+| 2026-11-19 | [AI Marketing hasn't worked. You need a marketing harness to get sh*t done](notes/ai-marketing-needs-a-marketing-harness.md) | blog | `brand` `agents` `governance` `context-engineering` | read | L'IA marketing déçoit faute de harness : un système qui comprend la marque, s'intègre aux outils, borne les agents et apprend des retours réels. |
 | 2026-11-19 | [Brand Harness](notes/brand-harness.md) | blog | `brand` `agents` `governance` `context-engineering` | read | Un brand harness transforme une stratégie de marque en exécution automatisée et mesurable : règles encodées, agents spécialisés, garde-fous et boucle de mesure. |
+| 2026-11-19 | [The Marketing Harness: Own the Audience, Own the Intelligence, Own the Loop](notes/the-marketing-harness-own-the-audience.md) | blog | `brand` `agents` `governance` `evals` | read | Le modèle est loué, la connaissance client et la boucle d'apprentissage doivent être possédées : le marketing harness décide ce qui est autorisé, mesurable et activable. |
 | 2026-11-17 | [Modern Web Guidance](notes/modern-web-guidance.md) | doc | `claude-code` `context-engineering` `agents` `web-platform` | read | Chrome publie une CLI et des skills qui donnent à l'agent de codage des guides web à jour (Baseline) et un scanner de code legacy, pour qu'il arrête de produire du web d'il y a dix ans. |
 | 2026-11-17 | [Manifeste de Proton pour l'IA en ingénierie logicielle](notes/proton-ai-manifesto-software-engineering.md) | blog | `sdlc` `adoption` `agents` `governance` | read | Le CTO de Proton juge que l'entreprise est restée à « utiliser les LLM pour accélérer l'existant » et qu'il faut repenser tout le cycle de vie, l'ingénieur devenant celui qui encadre et améliore les agents. |
 | 2026-11-16 | [Get your site agent-ready](notes/get-your-site-agent-ready.md) | blog | `context-engineering` `mcp` `llms-txt` `agent-readiness` | read | Exposer aux agents une carte courte (llms.txt), un index complet et des copies markdown de chaque page, tous générés au build, coûte peu et évite de leur faire décoder du HTML. |
@@ -18,13 +20,14 @@ Fichier généré par `scripts/build_index.py`, ne pas modifier à la main.
 | 2026-11-01 | [How Claude Code works in large codebases: Best practices and where to start](notes/how-claude-code-works-in-large-codebases.md) | blog | `claude-code` `context-engineering` `agents` `tool-design` `adoption` | read | Sur un gros codebase, le harness (CLAUDE.md, hooks, skills, LSP, sous-agents) pèse plus que le modèle : rendre le code navigable et nommer un responsable avant d'ouvrir l'accès. |
 | 2026-11-01 | [Building agents: When to fold subagents into your main agent loop](notes/when-to-fold-subagents-into-main-agent-loop.md) | blog | `agents` `orchestration` `context-engineering` `tool-design` `evals` | read | En entreprise, une seule boucle agentique qui charge skills et tools à la demande bat souvent l'architecture multi-sous-agents : migrer un sous-agent à la fois, evals à l'appui. |
 
-## Outils (10)
+## Outils (11)
 
 Radar : `adopt` utilisé, `trial` essayé, `assess` repéré non testé, `hold` écarté.
 
 | Radar | Outil | Tags | Prix | Pitch |
 |---|---|---|---|---|
 | Assess | [Archify](tools/archify.md) | `claude-code` `architecture` `diagrams` `codebase-mapping` | open-source | Skill d'agent qui transforme une idée, un plan ou un repo en diagramme interactif dans un fichier HTML autonome, validé avant livraison. |
+| Assess | [Brand Context Protocol (BCP)](tools/brand-context-protocol.md) | `brand` `context-engineering` `agents` `agent-readiness` | open-source | Spécification de fichiers markdown + YAML publiés sous /.well-known/brand/ pour donner aux agents IA la voix, les valeurs, les limites et les claims d'une marque. |
 | Assess | [Floorplan](tools/floorplan.md) | `claude-code` `codebase-mapping` `architecture` `security` | open-source | Plugin Claude Code et Codex qui génère une carte interactive d'un codebase, avec health check sécurité et suivi des changements de l'agent. |
 | Assess | [Graphify](tools/graphify.md) | `codebase-mapping` `knowledge-graph` `context-engineering` `claude-code` `mcp` | freemium | CLI et skill qui transforme code, docs, schémas SQL, PDF et médias en graphe de connaissance interrogeable, sans embeddings, exposé aux agents via MCP. |
 | Assess | [Modern Web Guidance](tools/modern-web-guidance.md) | `claude-code` `context-engineering` `agents` `web-platform` | open-source | CLI et skills qui fournissent à l'agent de codage des guides web à jour (Baseline) et un scanner de patterns legacy, installables en plugin Claude Code. |
