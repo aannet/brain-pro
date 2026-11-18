@@ -9,8 +9,8 @@ tags: [brand, agents, governance, context-engineering]
 status: read
 rating: null
 tldr: "Un brand harness transforme une stratégie de marque en exécution automatisée et mesurable : règles encodées, agents spécialisés, garde-fous et boucle de mesure."
-related: []
-tools: []
+related: [the-marketing-harness-own-the-audience, ai-marketing-needs-a-marketing-harness]
+tools: [brand-context-protocol]
 ---
 
 ## En bref
@@ -34,4 +34,4 @@ Le texte ne dit rien de nouveau sur les agents. Il pose une idée utile : la rè
 ## Pour aller plus loin
 
 - Adobe GenStudio, cité par la source comme exemple de contrôles de marque et de workflows d'approbation.
-- Le Reel d'origine, dont les captures montrent les fichiers du harness (voice.md, boundaries.md, claims.md, values.md, representation.md, visual.md) et les trois niveaux d'usage : à l'intérieur, à travers et au-delà de l'entreprise.
+- Le Reel d'origine (fichiers issus du Brand Context Protocol, voir [[brand-context-protocol]]), dont les captures montrent les fichiers du harness (voice.md, boundaries.md, claims.md, values.md, representation.md, visual.md) et les trois niveaux d'usage : à l'intérieur, à travers et au-delà de l'entreprise.
