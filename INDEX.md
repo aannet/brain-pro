@@ -17,7 +17,7 @@ Fichier généré par `scripts/build_index.py`, ne pas modifier à la main.
 | 2026-11-01 | [How Claude Code works in large codebases: Best practices and where to start](notes/how-claude-code-works-in-large-codebases.md) | blog | `claude-code` `context-engineering` `agents` `tool-design` `adoption` | read | Sur un gros codebase, le harness (CLAUDE.md, hooks, skills, LSP, sous-agents) pèse plus que le modèle : rendre le code navigable et nommer un responsable avant d'ouvrir l'accès. |
 | 2026-11-01 | [Building agents: When to fold subagents into your main agent loop](notes/when-to-fold-subagents-into-main-agent-loop.md) | blog | `agents` `orchestration` `context-engineering` `tool-design` `evals` | read | En entreprise, une seule boucle agentique qui charge skills et tools à la demande bat souvent l'architecture multi-sous-agents : migrer un sous-agent à la fois, evals à l'appui. |
 
-## Outils (9)
+## Outils (10)
 
 Radar : `adopt` utilisé, `trial` essayé, `assess` repéré non testé, `hold` écarté.
 
@@ -32,3 +32,4 @@ Radar : `adopt` utilisé, `trial` essayé, `assess` repéré non testé, `hold` 
 | Assess | [Shunt](tools/shunt.md) | `claude-code` `context-engineering` `token-optimization` `model-routing` | open-source | Plugin Claude Code de Spotify qui délègue la lecture de gros fichiers et la génération de boilerplate à un modèle moins cher, via Spotify Portal. |
 | Assess | [Single Agent Loop Kit](tools/single-agent-loop-kit.md) | `agents` `orchestration` `evals` `claude-code` | open-source | Skill Claude Code et scripts Python d'Anthropic pour migrer un système routeur + sous-agents vers une boucle unique, chaque changement étant mesuré sur une eval. |
 | Assess | [Understand Anything](tools/understand-anything.md) | `claude-code` `codebase-mapping` `knowledge-graph` `architecture` `onboarding` | open-source | Plugin Claude Code (et 16 autres plateformes) qui construit un graphe de connaissance d'un codebase ou d'un wiki, avec dashboard, visites guidées et vue par domaine métier. |
+| Assess | [Yogurt](tools/yogurt.md) | `meeting-notes` `local-ai` `privacy` `mcp` | open-source | App de bureau open source (MIT) qui enregistre, transcrit et résume des réunions avec des modèles d'IA exécutés en local, sans bot dans l'appel. |
