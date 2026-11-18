@@ -2,10 +2,11 @@
 
 Fichier généré par `scripts/build_index.py`, ne pas modifier à la main.
 
-## Fiches de lecture (10)
+## Fiches de lecture (11)
 
 | Ajout | Fiche | Type | Tags | Statut | TL;DR |
 |---|---|---|---|---|---|
+| 2026-11-19 | [Brand Harness](notes/brand-harness.md) | blog | `brand` `agents` `governance` `context-engineering` | read | Un brand harness transforme une stratégie de marque en exécution automatisée et mesurable : règles encodées, agents spécialisés, garde-fous et boucle de mesure. |
 | 2026-11-17 | [Modern Web Guidance](notes/modern-web-guidance.md) | doc | `claude-code` `context-engineering` `agents` `web-platform` | read | Chrome publie une CLI et des skills qui donnent à l'agent de codage des guides web à jour (Baseline) et un scanner de code legacy, pour qu'il arrête de produire du web d'il y a dix ans. |
 | 2026-11-17 | [Manifeste de Proton pour l'IA en ingénierie logicielle](notes/proton-ai-manifesto-software-engineering.md) | blog | `sdlc` `adoption` `agents` `governance` | read | Le CTO de Proton juge que l'entreprise est restée à « utiliser les LLM pour accélérer l'existant » et qu'il faut repenser tout le cycle de vie, l'ingénieur devenant celui qui encadre et améliore les agents. |
 | 2026-11-16 | [Get your site agent-ready](notes/get-your-site-agent-ready.md) | blog | `context-engineering` `mcp` `llms-txt` `agent-readiness` | read | Exposer aux agents une carte courte (llms.txt), un index complet et des copies markdown de chaque page, tous générés au build, coûte peu et évite de leur faire décoder du HTML. |
