@@ -21,7 +21,7 @@ Fichier généré par `scripts/build_index.py`, ne pas modifier à la main.
 | 2026-11-01 | [How Claude Code works in large codebases: Best practices and where to start](notes/how-claude-code-works-in-large-codebases.md) | blog | `claude-code` `context-engineering` `agents` `tool-design` `adoption` | read | Sur un gros codebase, le harness (CLAUDE.md, hooks, skills, LSP, sous-agents) pèse plus que le modèle : rendre le code navigable et nommer un responsable avant d'ouvrir l'accès. |
 | 2026-11-01 | [Building agents: When to fold subagents into your main agent loop](notes/when-to-fold-subagents-into-main-agent-loop.md) | blog | `agents` `orchestration` `context-engineering` `tool-design` `evals` | read | En entreprise, une seule boucle agentique qui charge skills et tools à la demande bat souvent l'architecture multi-sous-agents : migrer un sous-agent à la fois, evals à l'appui. |
 
-## Outils (12)
+## Outils (13)
 
 Radar : `adopt` utilisé, `trial` essayé, `assess` repéré non testé, `hold` écarté.
 
