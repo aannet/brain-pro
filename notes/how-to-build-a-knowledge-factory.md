@@ -10,7 +10,7 @@ status: read
 rating: null
 tldr: "Ce qui manque aux agents en entreprise, c'est de la connaissance maintenue, pas du contexte : une factory où les agents signalent les lacunes et un agent curateur met à jour skills et savoir métier en tâche de fond."
 related: [how-do-coding-agent-harnesses-self-evolve, what-makes-a-good-software-factory, when-to-fold-subagents-into-main-agent-loop]
-tools: []
+tools: [okf]
 ---
 
 ## En bref
