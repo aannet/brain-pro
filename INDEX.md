@@ -2,10 +2,11 @@
 
 Fichier généré par `scripts/build_index.py`, ne pas modifier à la main.
 
-## Fiches de lecture (13)
+## Fiches de lecture (14)
 
 | Ajout | Fiche | Type | Tags | Statut | TL;DR |
 |---|---|---|---|---|---|
+| 2026-11-22 | [How to build a knowledge factory for AI agents](notes/how-to-build-a-knowledge-factory.md) | blog | `agents` `context-engineering` `knowledge-management` `skills` | read | Ce qui manque aux agents en entreprise, c'est de la connaissance maintenue, pas du contexte : une factory où les agents signalent les lacunes et un agent curateur met à jour skills et savoir métier en tâche de fond. |
 | 2026-11-19 | [AI Marketing hasn't worked. You need a marketing harness to get sh*t done](notes/ai-marketing-needs-a-marketing-harness.md) | blog | `brand` `agents` `governance` `context-engineering` | read | L'IA marketing déçoit faute de harness : un système qui comprend la marque, s'intègre aux outils, borne les agents et apprend des retours réels. |
 | 2026-11-19 | [Brand Harness](notes/brand-harness.md) | blog | `brand` `agents` `governance` `context-engineering` | read | Un brand harness transforme une stratégie de marque en exécution automatisée et mesurable : règles encodées, agents spécialisés, garde-fous et boucle de mesure. |
 | 2026-11-19 | [The Marketing Harness: Own the Audience, Own the Intelligence, Own the Loop](notes/the-marketing-harness-own-the-audience.md) | blog | `brand` `agents` `governance` `evals` | read | Le modèle est loué, la connaissance client et la boucle d'apprentissage doivent être possédées : le marketing harness décide ce qui est autorisé, mesurable et activable. |

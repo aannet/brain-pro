@@ -9,7 +9,7 @@ tags: [sdlc, governance, evals, agents, adoption]
 status: read
 rating: null
 tldr: "Donner des agents de code à cent développeurs ne fait pas une usine : il faut une ligne partagée, une trace par changement, des contrôles indépendants et le produit associé dès la conception."
-related: [the-ai-native-sdlc-playbook, two-years-of-ai-in-software-development, when-to-fold-subagents-into-main-agent-loop, proton-ai-manifesto-software-engineering]
+related: [the-ai-native-sdlc-playbook, two-years-of-ai-in-software-development, when-to-fold-subagents-into-main-agent-loop, proton-ai-manifesto-software-engineering, how-to-build-a-knowledge-factory]
 tools: []
 ---
 

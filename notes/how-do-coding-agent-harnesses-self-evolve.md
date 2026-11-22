@@ -9,7 +9,7 @@ tags: [claude-code, evals, context-engineering, agents]
 status: read
 rating: null
 tldr: "Un harness d'agent peut s'améliorer après coup, mais chaque modification doit prouver qu'elle réduit la récurrence du problème, sinon elle n'ajoute que du bruit."
-related: [how-claude-code-works-in-large-codebases, when-to-fold-subagents-into-main-agent-loop, the-ai-native-sdlc-playbook]
+related: [how-claude-code-works-in-large-codebases, when-to-fold-subagents-into-main-agent-loop, the-ai-native-sdlc-playbook, how-to-build-a-knowledge-factory]
 tools: [retro-skill]
 ---
 
