@@ -2,10 +2,11 @@
 
 Fichier généré par `scripts/build_index.py`, ne pas modifier à la main.
 
-## Fiches de lecture (14)
+## Fiches de lecture (15)
 
 | Ajout | Fiche | Type | Tags | Statut | TL;DR |
 |---|---|---|---|---|---|
+| 2026-11-26 | [Computer Use Agents in practice: Automating UI testing](notes/computer-use-agents-in-practice-automating-ui-testing.md) | blog | `agents` `computer-use` `ui-testing` `playwright` `evals` | read | ML6 utilise des agents de computer use pour tester une UI : trois pipelines (découverte de parcours, chasse aux bugs, génération de tests Playwright) qui déplacent l'effort vers la qualité des descriptions d'entrée et la relecture humaine. |
 | 2026-11-22 | [How to build a knowledge factory for AI agents](notes/how-to-build-a-knowledge-factory.md) | blog | `agents` `context-engineering` `knowledge-management` `skills` | read | Ce qui manque aux agents en entreprise, c'est de la connaissance maintenue, pas du contexte : une factory où les agents signalent les lacunes et un agent curateur met à jour skills et savoir métier en tâche de fond. |
 | 2026-11-19 | [AI Marketing hasn't worked. You need a marketing harness to get sh*t done](notes/ai-marketing-needs-a-marketing-harness.md) | blog | `brand` `agents` `governance` `context-engineering` | read | L'IA marketing déçoit faute de harness : un système qui comprend la marque, s'intègre aux outils, borne les agents et apprend des retours réels. |
 | 2026-11-19 | [Brand Harness](notes/brand-harness.md) | blog | `brand` `agents` `governance` `context-engineering` | read | Un brand harness transforme une stratégie de marque en exécution automatisée et mesurable : règles encodées, agents spécialisés, garde-fous et boucle de mesure. |
